@@ -1,0 +1,20 @@
+<mat-form-field class="pvt-mat-input" appearance="outline">
+  <mat-label>Ticket ID</mat-label>
+  <mat-icon matPrefix *ngIf="hasPrefix">mode_edit</mat-icon>
+  <input matInput type="text" [formControl]="control" />
+  <mat-error *ngIf="false"> Please enter a valid email address </mat-error>
+  <mat-error *ngIf="false"> Email is <strong>required</strong> </mat-error>
+  <button
+    matSuffix
+    mat-icon-button
+    class="btn-cancel-icon clickable"
+    aria-label="Clear"
+    *ngIf="control.value && !hasSuffix"
+    (click)="control.setValue('')"
+  >
+    <mat-icon class="cancel-icon">close</mat-icon>
+  </button>
+  <mat-icon matSuffix *ngIf="hasSuffix">mode_edit</mat-icon>
+  <mat-hint>Errors appear instantly!</mat-hint>
+  <mat-hint align="end">0 / 5</mat-hint>
+</mat-form-field>
