@@ -1,9 +1,18 @@
 <div class="" style="margin: 5em">
-  <app-pvt-mat-input
-    [control]="emailFormControl"
-    [hasPrefix]="false"
-    [hasSuffix]="false"
-    ></app-pvt-mat-input>
+  <app-pvt-mat-input [control]="emailFormControl" [validators]="validators"></app-pvt-mat-input>
+
+  <app-pvt-mat-input [placeholder]="'Ingrese su ticket ID'"></app-pvt-mat-input>
+
+  <app-pvt-mat-input [hasPrefix]="true"></app-pvt-mat-input>
+
+  <app-pvt-mat-input [hasSuffix]="true"></app-pvt-mat-input>
+
+  <app-pvt-mat-input [hasPrefix]="true" [hasSuffix]="true"></app-pvt-mat-input>
+
+  <app-pvt-mat-input [isDisabled]="true"></app-pvt-mat-input>
 </div>
 
-{{emailFormControl.value}}
+<pre>
+  {{ emailFormControl.value | json }}
+</pre>
+<!-- //Solo mostrar un error -->
