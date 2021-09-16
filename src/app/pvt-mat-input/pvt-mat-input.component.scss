@@ -1,9 +1,9 @@
-.pvt-mat-input{
-	width: 300px;
+.pvt-mat-input {
+  width: 300px;
   .btn-cancel-icon {
     background: none;
     border: none;
-  
+
     .cancel-icon {
       font-size: 24px;
       color: #66768f;
@@ -11,98 +11,110 @@
   }
 }
 
-::ng-deep{
+::ng-deep {
   .mat-form-field-appearance-outline .mat-select-arrow-wrapper {
-		visibility: hidden;
-	}
+    visibility: hidden;
+  }
 
   input.mat-input-element {
     //Inputs de los mat-form-field
     color: rgba(27, 35, 88, 0.6);
-    font-family: 'hind_lightregular';
+    font-family: "hind_lightregular";
   }
 
-  .mat-form-field-label{
+  .mat-form-field-label {
     //Color del label, en estado normal
     color: gray;
   }
 
   .mat-form-field-appearance-outline .mat-form-field-outline {
-		//Borde de los mat-form-field
-		color: #b6ddfe; //#009fee;
-	}
+    //Borde de los mat-form-field
+    color: #b6ddfe; //#009fee;
+  }
 
   .mat-form-field.mat-focused .mat-form-field-label {
-		//Label color on focust, floating label
-		color: #00a2ff !important;
-	}
+    //Label color on focust, floating label
+    color: #00a2ff !important;
+  }
 
-	.mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
-		//Borde on focus de los mat-form-field
-		color: #186dff !important;
-		border-width: 1px;
-	}
+  .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+    //Borde on focus de los mat-form-field
+    color: #186dff !important;
+    border-width: 1px;
+  }
 
   //DISABLED
-  .pvt-mat-input--disabled{
-    .mat-form-field-should-float .mat-form-field-wrapper .mat-form-field-flex 
-    .mat-form-field-infix .mat-form-field-label-wrapper .mat-form-field-label {
+  .pvt-mat-input--disabled {
+    .mat-form-field-should-float
+      .mat-form-field-wrapper
+      .mat-form-field-flex
+      .mat-form-field-infix
+      .mat-form-field-label-wrapper
+      .mat-form-field-label {
       color: red;
     }
 
-    .mat-form-field.mat-focused .mat-form-field-label{
+    .mat-form-field.mat-focused .mat-form-field-label {
       //Color del label, en estado normal
       color: red;
     }
   }
-  .pvt-mat-input--disabled.mat-form-field-appearance-outline .mat-form-field-outline {
-		//Borde de los mat-form-field
-		color: red; //#009fee;
-	}
+  .pvt-mat-input--disabled.mat-form-field-appearance-outline
+    .mat-form-field-outline {
+    //Borde de los mat-form-field
+    color: red; //#009fee;
+  }
 
   .pvt-mat-input--disabled.mat-form-field.mat-focused .mat-form-field-label {
-		//Label color on focust, floating label
-		color: red !important;
-	}
+    //Label color on focust, floating label
+    color: red !important;
+  }
 
-	.pvt-mat-input--disabled.mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
-		//Borde on focus de los mat-form-field
-		color: red !important;
-		border-width: 1px;
-	}
+  .pvt-mat-input--disabled.mat-form-field-appearance-outline.mat-focused
+    .mat-form-field-outline-thick {
+    //Borde on focus de los mat-form-field
+    color: red !important;
+    border-width: 1px;
+  }
   //DISABLED END
 
   .mat-form-field-flex > .mat-form-field-infix {
-		padding: 0.3em 0px !important;
-	}
+    padding: 0.3em 0px !important;
+  }
 
-	.mat-form-field-label-wrapper {
-		top: -1.5em;
-	}
+  .mat-form-field-label-wrapper {
+    top: -1.5em;
+  }
 
-	.mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float
-		.mat-form-field-label {
-		transform: translateY(-1.1em) scale(0.75);
-		width: 133.33333%;
-		font-family: 'hind_lightregular';
-	}
+  .mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float
+    .mat-form-field-label {
+    transform: translateY(-1.1em) scale(0.75);
+    width: 133.33333%;
+    font-family: "hind_lightregular";
+  }
 
-	.mat-form-field-flex {
-		height: 44px;
-	}
+  .mat-form-field-flex {
+    height: 44px;
+  }
 
-	.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label,
-	.mat-form-field-empty.mat-form-field-label {
-		//Inputs de todos los mat-form-field
-		font-family: 'hind_lightregular';
-	}
+  .mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label,
+  .mat-form-field-empty.mat-form-field-label {
+    //Inputs de todos los mat-form-field
+    font-family: "hind_lightregular";
+  }
 
-  .mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-prefix .mat-icon-button,
-	.mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-suffix .mat-icon-button {
-		outline: none;
-	}
+  .mat-form-field:not(.mat-form-field-appearance-legacy)
+    .mat-form-field-prefix
+    .mat-icon-button,
+  .mat-form-field:not(.mat-form-field-appearance-legacy)
+    .mat-form-field-suffix
+    .mat-icon-button {
+    outline: none;
+  }
 
-  .mat-body, .mat-body-1, .mat-typography{
+  .mat-body,
+  .mat-body-1,
+  .mat-typography {
     //Solo para ejemplo
     font: inherit;
   }

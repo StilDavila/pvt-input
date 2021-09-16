@@ -29,15 +29,5 @@ export class AppComponent {
 
   emailFormControl = new FormControl('');
 
-  constructor() {
-    // console.log(this.validators.map((validator: any) => validator.ngValidator));
-    // console.log('----');
-    // console.log([
-    //   Validators.required,
-    //   Validators.email,
-    //   Validators.maxLength(10),
-    //   Validators.minLength(5),
-    // ]);
-    // this.emailFormControl.addValidators(this.validators.map((validator: any) => validator.ngValidator))
-  }
+  constructor() {}
 }
